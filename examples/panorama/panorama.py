@@ -11,6 +11,6 @@ tello.connect()
 print(tello.get_battery())
 
 tello.takeoff()
-tello.move_up(500)
+tello.fly_up(500)
 panoramaModule.panorama_half_clockwise(tello)
 tello.land()

@@ -18,11 +18,11 @@ pad = tello.get_mission_pad_id()
 # 发现并识别挑战卡直到看见1号挑战卡
 while pad != 1:
     if pad == 3:
-        tello.move_back(30)
-        tello.rotate_clockwise(90)
+        tello.fly_backward(30)
+        tello.turn_right(90)
 
     if pad == 4:
-        tello.move_up(30)
+        tello.fly_up(30)
         tello.flip_forward()
 
     pad = tello.get_mission_pad_id()

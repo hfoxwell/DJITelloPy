@@ -29,8 +29,8 @@ recorder = Thread(target=videoRecorder)
 recorder.start()
 
 tello.takeoff()
-tello.move_up(100)
-tello.rotate_counter_clockwise(360)
+tello.fly_up(100)
+tello.turn_left(360)
 tello.land()
 
 keepRecording = False
